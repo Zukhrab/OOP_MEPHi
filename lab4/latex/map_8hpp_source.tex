@@ -1,0 +1,70 @@
+\hypertarget{map_8hpp_source}{}\doxysection{map.\+hpp}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{//}}
+\DoxyCodeLine{2 \textcolor{comment}{//  map.hpp}}
+\DoxyCodeLine{3 \textcolor{comment}{//  Lab 4}}
+\DoxyCodeLine{4 \textcolor{comment}{//}}
+\DoxyCodeLine{5 \textcolor{comment}{//  Created by Зухраб Асаханов on 29.10.2022.}}
+\DoxyCodeLine{6 \textcolor{comment}{//  Copyright © 2022 Зухраб Асаханов. All rights reserved.}}
+\DoxyCodeLine{7 \textcolor{comment}{//}}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#ifndef map\_hpp}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#define map\_hpp}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include <ctime>}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include <array>}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include <stack>}}
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#include <memory>}}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#include "{}piece.hpp"{}}}
+\DoxyCodeLine{20 \textcolor{preprocessor}{\#include "{}pawn.hpp"{}}}
+\DoxyCodeLine{21 \textcolor{preprocessor}{\#include "{}rook.hpp"{}}}
+\DoxyCodeLine{22 \textcolor{preprocessor}{\#include "{}knight.hpp"{}}}
+\DoxyCodeLine{23 \textcolor{preprocessor}{\#include "{}bishop.hpp"{}}}
+\DoxyCodeLine{24 \textcolor{preprocessor}{\#include "{}queen.hpp"{}}}
+\DoxyCodeLine{25 \textcolor{preprocessor}{\#include "{}king.hpp"{}}}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27 \textcolor{keyword}{enum} UnderAttack}
+\DoxyCodeLine{28 \{}
+\DoxyCodeLine{29     NO,}
+\DoxyCodeLine{30     YES}
+\DoxyCodeLine{31 \};}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33 \textcolor{keyword}{struct }\mbox{\hyperlink{struct_cage}{Cage}}}
+\DoxyCodeLine{34 \{}
+\DoxyCodeLine{35     UnderAttack UABLACK;}
+\DoxyCodeLine{36     UnderAttack UAWHITE;}
+\DoxyCodeLine{37     \mbox{\hyperlink{class_piece}{Piece}}* PP;}
+\DoxyCodeLine{38 \};}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{40 \textcolor{keyword}{class }\mbox{\hyperlink{class_board}{Board}}}
+\DoxyCodeLine{41 \{}
+\DoxyCodeLine{42     \textcolor{keyword}{private}:}
+\DoxyCodeLine{43         std::stack<std::string> Stack;}
+\DoxyCodeLine{44         \textcolor{keywordtype}{int} Clock1;}
+\DoxyCodeLine{45         \textcolor{keywordtype}{int} Clock2;}
+\DoxyCodeLine{46         \textcolor{keywordtype}{int} Current\_Time;}
+\DoxyCodeLine{47         std::array<std::array<Cage, 8>, 8> board;}
+\DoxyCodeLine{48     }
+\DoxyCodeLine{49     \textcolor{keyword}{public}:}
+\DoxyCodeLine{50         \textcolor{comment}{//constructors}}
+\DoxyCodeLine{51         \mbox{\hyperlink{class_board}{Board}}();}
+\DoxyCodeLine{52         \textcolor{keywordtype}{void} ShowBoard();}
+\DoxyCodeLine{53         \textcolor{keywordtype}{void} ShowHistory();}
+\DoxyCodeLine{54         \textcolor{keywordtype}{void} AddStackString(\textcolor{keywordtype}{int} name, \textcolor{keywordtype}{int} fromX, \textcolor{keywordtype}{int} fromY, \textcolor{keywordtype}{int} toX, \textcolor{keywordtype}{int} toY);}
+\DoxyCodeLine{55         \mbox{\hyperlink{class_board}{\string~Board}}();}
+\DoxyCodeLine{56     }
+\DoxyCodeLine{57         }
+\DoxyCodeLine{58     }
+\DoxyCodeLine{59         }
+\DoxyCodeLine{60         }
+\DoxyCodeLine{61     }
+\DoxyCodeLine{62         }
+\DoxyCodeLine{63         }
+\DoxyCodeLine{64 \};}
+\DoxyCodeLine{65 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* map\_hpp */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

@@ -1,0 +1,66 @@
+\hypertarget{piece_8hpp_source}{}\doxysection{piece.\+hpp}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{//}}
+\DoxyCodeLine{2 \textcolor{comment}{//  piece.hpp}}
+\DoxyCodeLine{3 \textcolor{comment}{//  Lab 4}}
+\DoxyCodeLine{4 \textcolor{comment}{//}}
+\DoxyCodeLine{5 \textcolor{comment}{//  Created by Зухраб Асаханов on 08.11.2022.}}
+\DoxyCodeLine{6 \textcolor{comment}{//  Copyright © 2022 Зухраб Асаханов. All rights reserved.}}
+\DoxyCodeLine{7 \textcolor{comment}{//}}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#ifndef piece\_hpp}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#define piece\_hpp}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 \textcolor{keyword}{enum} Color}
+\DoxyCodeLine{15 \{}
+\DoxyCodeLine{16     BLACK,}
+\DoxyCodeLine{17     WHITE}
+\DoxyCodeLine{18 \};}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20 \textcolor{keyword}{enum} Names}
+\DoxyCodeLine{21 \{}
+\DoxyCodeLine{22     PAWN = 1,}
+\DoxyCodeLine{23     ROOK,}
+\DoxyCodeLine{24     KNIGHT,}
+\DoxyCodeLine{25     BISHOP,}
+\DoxyCodeLine{26     QUEEN,}
+\DoxyCodeLine{27     KING}
+\DoxyCodeLine{28 \};}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30 \textcolor{keyword}{class }\mbox{\hyperlink{class_piece}{Piece}}}
+\DoxyCodeLine{31 \{}
+\DoxyCodeLine{32     \textcolor{keyword}{protected}:}
+\DoxyCodeLine{33         Color PieceColor;}
+\DoxyCodeLine{34         Names Name;}
+\DoxyCodeLine{35     }
+\DoxyCodeLine{36     \textcolor{keyword}{public}:}
+\DoxyCodeLine{37     }
+\DoxyCodeLine{38         \textcolor{comment}{//constructors}}
+\DoxyCodeLine{39         \mbox{\hyperlink{class_piece}{Piece}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{40         \mbox{\hyperlink{class_piece}{Piece}}(\textcolor{keyword}{enum} Names \_PieceName);}
+\DoxyCodeLine{41         \mbox{\hyperlink{class_piece}{Piece}}(\textcolor{keyword}{enum} Color \_PieceColor, Names \_PieceName);}
+\DoxyCodeLine{42     }
+\DoxyCodeLine{43         \textcolor{comment}{//setters}}
+\DoxyCodeLine{44         \textcolor{keywordtype}{void} setColor(\textcolor{keyword}{enum} Color \_PieceColor);}
+\DoxyCodeLine{45         \textcolor{keywordtype}{void} setNames(\textcolor{keyword}{enum} Names \_PieceName);}
+\DoxyCodeLine{46         }
+\DoxyCodeLine{47         \textcolor{comment}{//getters}}
+\DoxyCodeLine{48         \textcolor{keyword}{enum} Color getColor();}
+\DoxyCodeLine{49         \textcolor{keyword}{enum} Names getNames();}
+\DoxyCodeLine{50     }
+\DoxyCodeLine{51         \textcolor{comment}{//methods}}
+\DoxyCodeLine{52         }
+\DoxyCodeLine{53     }
+\DoxyCodeLine{54     }
+\DoxyCodeLine{55     }
+\DoxyCodeLine{56     }
+\DoxyCodeLine{57     }
+\DoxyCodeLine{58 \};}
+\DoxyCodeLine{59 }
+\DoxyCodeLine{60 }
+\DoxyCodeLine{61 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* piece\_hpp */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}
